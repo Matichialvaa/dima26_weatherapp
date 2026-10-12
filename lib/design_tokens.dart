@@ -27,6 +27,13 @@ class AppColors {
   static final glassFill = Colors.white.withValues(alpha: 0.16);
   static final chipFill = Colors.white.withValues(alpha: 0.10);
   static final glassStroke = Colors.white.withValues(alpha: 0.26);
+
+  // Lab 3: the other whites the contract uses
+  static final white90 = Colors.white.withValues(alpha: 0.90); // chip icons
+  static final white85 = Colors.white.withValues(alpha: 0.85); // search icon
+  static final white80 = Colors.white.withValues(alpha: 0.80); // heart, not saved
+  static final white70 = Colors.white.withValues(alpha: 0.70); // empty state
+  static final hairline = Colors.white.withValues(alpha: 0.13); // dividers in Settings
 }
 
 // The full-screen background gradient.
@@ -57,13 +64,30 @@ class AppText {
   static const tabLabel =
       TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: AppColors.ink);
 
-  // Lab 3: bigger styles for the redesigned screens
-  static const bigTitle =
-      TextStyle(fontSize: 28, fontWeight: FontWeight.w700, color: AppColors.ink);
-  static const bigTemp = TextStyle(
-      fontSize: 72, fontWeight: FontWeight.w200, color: AppColors.ink, height: 1);
-  static const bigCity =
-      TextStyle(fontSize: 22, fontWeight: FontWeight.w600, color: AppColors.ink);
-  static final hint =
-      TextStyle(fontSize: 15, fontWeight: FontWeight.w400, color: AppColors.body78, height: 1.4);
+  // Lab 3: the remaining styles of the contract (§4)
+  static const heroTemp = TextStyle(
+      fontSize: 56, fontWeight: FontWeight.w200, color: AppColors.ink, height: 1);
+  static const savedTitle =
+      TextStyle(fontSize: 21, fontWeight: FontWeight.w600, color: AppColors.ink);
+  static final caption =
+      TextStyle(fontSize: 12, fontWeight: FontWeight.w400, color: AppColors.inkSecondary);
+  static final sectionLabel = TextStyle(
+      fontSize: 11, fontWeight: FontWeight.w600, color: AppColors.inkSecondary, letterSpacing: 1.1);
+  static const searchInput =
+      TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: AppColors.ink);
+  // Saved: the temperature on the right of a CityRow
+  static const rowTemp =
+      TextStyle(fontSize: 18, fontWeight: FontWeight.w300, color: AppColors.ink);
+  // Detail: the DayCards of the forecast strip
+  static final dayName =
+      TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: AppColors.body78);
+  static const dayMax =
+      TextStyle(fontSize: 15, fontWeight: FontWeight.w600, color: AppColors.ink);
+  // Settings: a row is a label (+ a caption), the footer is the smallest text
+  static const settingLabel =
+      TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: AppColors.ink);
+  static final settingCaption =
+      TextStyle(fontSize: 11, fontWeight: FontWeight.w400, color: AppColors.inkSecondary);
+  static final footer = TextStyle(
+      fontSize: 11, fontWeight: FontWeight.w400, color: Colors.white.withValues(alpha: 0.55));
 }
